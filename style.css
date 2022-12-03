@@ -168,6 +168,7 @@ main h1 {
 .link-container a {
     position: absolute;
     visibility: hidden;
+    cursor: pointer;
     bottom : -50px;
 
     padding: 2rem 0;
@@ -192,7 +193,6 @@ main h1 {
 .project:hover .link-container a{
     position: absolute;
     visibility: visible;
-    cursor: pointer;
 
     bottom: 0;
     background-color: rgba(0,0,0,0.7);
@@ -314,7 +314,7 @@ input:checked + .slider:before {
 }
 
 /* MEDIA QUERIES */
-/* @media(prefers-reduced-motion) {
+@media(prefers-reduced-motion) {
     * {
         animation: none !important;
         transition: none !important;
@@ -323,7 +323,7 @@ input:checked + .slider:before {
     .project {
         opacity: 1;
     }
-} */
+}
 
 /* MOBILE AND TABLET */
 @media(max-width: 1024px) {
@@ -336,6 +336,10 @@ input:checked + .slider:before {
     }
 
     .link-container a {
+        position: absolute;
         visibility: visible;
+
+        bottom: 0;
+        background-color: rgba(0,0,0,0.7);
     }
 }
