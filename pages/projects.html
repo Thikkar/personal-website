@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/73da03ab19.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body onload="handlePageLoad()">
+    <nav>
+        <ul>
+            <div class="internal-nav">
+                <label class="switch">
+                    <input id="darkmode-toggle" aria-label="darkmode-toggle" type="checkbox" onclick="toggleDarkMode()">
+                    <span class="slider round"></span>
+                </label>
+                <label for="darkmode-toggle">Dark Mode</label>
+            </div>
+            <div aria-label="profile-pic" class="avatar">
+                <p id="first-name">Karthik</p>
+                <a href="../index.html">
+                    <img src="https://cdn.glitch.global/bb432cc7-5d50-4fad-b3dd-592bcdf76a89/ProfilePic.PNG?v=1664317433944" alt="Avatar">
+                </a>
+                <p id="last-name">Subramanian</p>
+            </div>
+            <div class="external-nav">
+                <li><a aria-label="bio-button" href="./bio.html">Bio</a></li>
+                <li><a aria-label="projects-button" href="./projects.html">Projects</a></li>
+                <li><a aria-label="resume-button" href="https://drive.google.com/file/d/1sgYkZBQUhzfIB9KsKrefRalHXS2xmmfc/view?usp=sharing" target="_blank">Resume</a></li>
+                <li><a aria-label="github-button" href="https://github.com/Thikkar" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a aria-label="linkedin-button" href="https://www.linkedin.com/in/thikkar/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </div>  
+        </ul>  
+    </nav>
+    <main>
+        <h1>My Projects</h1>
+        <ul class="projects-container">
+            <li class="project">
+                <img src="../images/Fibonacci-Pic.png" alt="Project-One-Image">
+                <div class="link-container">
+                    <a href="https://thikkar.github.io/Fibonacci-Generator/" target="_blank">Fibonacci Sequence Generator <i class="fa-solid fa-link"></i></a>
+                </div>
+            </li>
+            <li class="project">
+                <img src="../images/Reversi-Pic.png" alt="Project-Two-Image">
+                <div class="link-container">
+                    <a href="https://github.com/Thikkar/Reversi" target="_blank">Reversi <i class="fa-solid fa-link"></i></a>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <i class="fa-solid fa-envelope"></i> <span>karthiksubramanian2024@u.northwestern.edu</span>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
