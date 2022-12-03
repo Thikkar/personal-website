@@ -185,11 +185,6 @@ main h1 {
     transition: background-color 1s;
 }
 
-.project:hover {
-    transform: translateY(-100%);
-    transition: transform 1s;
-}
-
 .project:hover .link-container a{
     position: absolute;
     visibility: visible;
